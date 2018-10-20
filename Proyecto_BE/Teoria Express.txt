@@ -1,0 +1,33 @@
+Express:
+
+    #La finalidad de Express es la cración -> API REST
+    #Express nos va a permitir como codificar los Metodos HTTP
+_______________________________________________________________________
+#API (APLICATION PROGRAMMING INTERFACE): programa que me da metodos para interactuar con el.
+
+#REST (REPRESENTATIONAL STATE TRANSFER): permite agilizar la comunicaciones con el servidor y el cliente.
+_______________________________________________________________________
+Métodos HTTP:  
+    #GET: cliente solicita colección de recursos o recurso al servidor.
+    #POST: cliente le brinda información al servidor para crear recurso.
+    #PUT: parecido a post, con la diferencia que solo sirve para binarios (archivos).
+    #PATCH: cliente actualiza una colección o recurso (se cambia algo).
+    #DELETE: cliente elimina una colección o recurso. 
+    #OPTIONS: nos permite ver que metodos estan disponibles.
+
+Todos estos metodos los realiza el cliente (Cliente(req) --> HTTP --> Server(res))
+
+    #Request-Response:
+_______________________________________________________________________
+Peticiones:
+    #headers (GET)
+    #params (GET)
+    #query (GET)
+    #body/payload (POST,PUT,PATCH)
+    #cockies 
+_______________________________________________________________________
+Middleware: funcion filtro
+
+let mi_Middleware = function (req,res,next){
+    next();
+}
