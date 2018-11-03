@@ -10,7 +10,7 @@ let checkToken = function (req, res, next) {
     if (req.get('token') == '10') {
         return next()
     }
-    res.send(401)
+    res.sendStatus(401)
 }
 
 app.use(checkToken)
